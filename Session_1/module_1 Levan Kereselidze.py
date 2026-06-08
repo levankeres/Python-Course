@@ -1,7 +1,7 @@
 from typing import List
 
 
-def task_1( array: list[int], target: int) -> list[int]:
+def task_1(array: list[int], target: int) -> list[int]:
     for i in range(len(array)):
         if target - array[i] in array:
             return [array[i], target-array[i]]
